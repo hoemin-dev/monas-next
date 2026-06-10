@@ -135,23 +135,57 @@
 
 
 .sub-tabs {
-  background: #ffffff;
+  background: #f1f1f1;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.tab-label{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tab-main-label {
+  flex-shrink: 0;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #444;
+}
+
+.tab-sub-label {
+  flex-shrink: 0;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #0ba181;
+}
+
+.tab-ticker {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00569c;
+  letter-spacing: 0.5px;
 }
 
 .sub-tabs-inner {
   display: flex;
-  gap: 8px;
+  align-items: center;
+  gap: 10px;
   overflow-x: auto;
   white-space: nowrap;
+  line-height: 0.8;
+  padding-top: 10px;
 }
 
 .sub-tabs a {
   display: inline-block;
-  padding: 18px 22px;
+  padding: 6px 10px;
   color: #444;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   border-bottom: 3px solid transparent;
 }
@@ -644,8 +678,15 @@
 }
 
 .sub-hero {
-    background: #f5f5f5;
-    padding: 60px 0;
+  background: #f5f5f5;
+  padding: 120px 0 0;
+}
+
+.hero-product-tabs {
+  margin-top: 20px;
+  position: static;
+  top: auto;
+  background: transparent;
 }
 
 .breadcrumb {
@@ -723,7 +764,7 @@
 }
 
 .content-section {
-  padding: 90px 0;
+  padding: 20px 0;
 }
 
 .two-column {
@@ -766,32 +807,33 @@
 
 .product-tabs {
   display: flex;
+  gap: 30px;
   position: sticky;
-  top: 140px;
-  border-bottom: 1px solid #dcdcdc;
+  top: 40px;
 }
 
 .product-tabs a {
-  padding: 18px 32px;
+  padding: 10px 6px;
   border-right: none;
-
   color: #666;
   text-decoration: none;
 
-  background: #f7f7f7;
-}
-
-.product-tabs a:last-child {
-  border-right: 1px solid #dcdcdc;
-  border-left: 1px solid #dcdcdc;
 }
 
 .product-tabs a.active {
-  background: #fff;
   color: #009245;
   font-weight: 600;
-  border-top: 2px solid #009245;
+  border-bottom: 2px solid #009245;
 }
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
 
 /*.two-column {
   padding: 48px 30px 48px 30px;
