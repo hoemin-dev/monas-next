@@ -55,8 +55,22 @@ body {
   white-space: nowrap;
 }
 
+html[lang="en"] .gnb a {
+  font-size: 16px;
+}
+
+html[lang="ko"] .gnb a {
+  font-size: 18px;
+}
+
 .gnb a:hover {
   color: #008a3d;
+}
+
+.lang-svg {
+  width: 14px;
+  height: 14px;
+  display: block;
 }
 
 .lang-dropdown {
@@ -65,6 +79,9 @@ body {
 }
 
 .lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   border: 1px solid #ddd;
   background: #fff;
   padding: 6px 10px;
